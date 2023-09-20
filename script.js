@@ -31,6 +31,7 @@ function cek() {
 }
 function reset() {
   getId("cek").disabled = false
+  getId("input").focus()
   getId("input").value = ""
   getId("output").innerHTML = "Jawaban ..."
   pilihAcak()
