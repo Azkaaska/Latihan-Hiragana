@@ -26,11 +26,11 @@ function cek() {
     getId("output").innerHTML = "Jawaban Salah!<br>Jawaban Benar: "+jawaban
     getId("salah").innerHTML = ++salah
   }
-  getId("cek").disabled = true
+  getId("input").disabled = true
   setTimeout("reset()", 2000)
 }
 function reset() {
-  getId("cek").disabled = false
+  getId("input").disabled = false
   getId("input").focus()
   getId("input").value = ""
   getId("output").innerHTML = "Jawaban ..."
